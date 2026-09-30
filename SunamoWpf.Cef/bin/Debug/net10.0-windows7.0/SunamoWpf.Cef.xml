@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SunamoWpf.Cef</name>
+    </assembly>
+    <members>
+        <member name="T:SunamoWpf.Cef.CefBrowser">
+            <summary>
+            WPF browser control wrapping CefSharp's <see cref="T:CefSharp.Wpf.ChromiumWebBrowser"/>, implementing the
+            shared <see cref="T:SunamoWpf.Cef._sunamo.ISunamoBrowserT`1"/> contract used across the Sunamo browser wrappers
+            (SunamoCef/CefBrowser, WebSunamo/SunamoBrowser, UniversalWebControl/SunamoBrowser).
+            </summary>
+            <summary>
+            CefBrowser
+            </summary>
+        </member>
+        <member name="E:SunamoWpf.Cef.CefBrowser.CloseButtonClick">
+            <summary>
+            Raised when the user activates the browser's close button. Not wired to any built-in UI;
+            the host application decides when to raise it.
+            </summary>
+        </member>
+        <member name="E:SunamoWpf.Cef.CefBrowser.CustomButtonClick">
+            <summary>
+            Raised when the user activates a host-defined custom button. Not wired to any built-in UI;
+            the host application decides when to raise it.
+            </summary>
+        </member>
+        <member name="E:SunamoWpf.Cef.CefBrowser.LoadCompleted">
+            <summary>
+            Raised with the loaded URL when the main frame finishes loading.
+            </summary>
+        </member>
+        <member name="E:SunamoWpf.Cef.CefBrowser.ShowPopup">
+            <summary>
+            Raised when a popup window would be shown, carrying the control that would host it.
+            </summary>
+        </member>
+        <member name="M:SunamoWpf.Cef.CefBrowser.#ctor">
+            <summary>
+            Creates the browser control and its underlying <see cref="T:CefSharp.Wpf.ChromiumWebBrowser"/>.
+            </summary>
+        </member>
+        <member name="P:SunamoWpf.Cef.CefBrowser.Source">
+            <summary>
+            Gets or sets the currently loaded URI. Setting it navigates the browser.
+            </summary>
+        </member>
+        <member name="P:SunamoWpf.Cef.CefBrowser.HTML">
+            <summary>
+            Gets the page HTML synchronously. Not supported by CefSharp's asynchronous model;
+            use <see cref="M:SunamoWpf.Cef.CefBrowser.GetContent"/> instead.
+            </summary>
+        </member>
+        <member name="M:SunamoWpf.Cef.CefBrowser.GetContent">
+            <summary>
+            Gets the current page's outer HTML.
+            </summary>
+            <returns>The page's outer HTML.</returns>
+        </member>
+        <member name="M:SunamoWpf.Cef.CefBrowser.GetHtmlDocument">
+            <summary>
+            Gets the current page parsed as an <see cref="T:HtmlAgilityPack.HtmlDocument"/>.
+            </summary>
+            <returns>The parsed HTML document.</returns>
+        </member>
+        <member name="M:SunamoWpf.Cef.CefBrowser.Navigate(System.String)">
+            <summary>
+            Navigates the browser to the given URI.
+            </summary>
+            <param name="uri">The absolute URI to navigate to.</param>
+        </member>
+        <member name="M:SunamoWpf.Cef.CefBrowser.ScrollToEnd">
+            <summary>
+            Scrolls the page to its bottom.
+            </summary>
+            <returns>True if the scroll script was sent successfully; otherwise, false.</returns>
+        </member>
+        <member name="M:SunamoWpf.Cef.CefBrowser.Init">
+            <summary>
+            Ensures the underlying CEF runtime is initialized. Called automatically from the constructor;
+            exposed so hosts can pre-initialize CEF before creating the control.
+            </summary>
+        </member>
+        <member name="M:SunamoWpf.Cef.CefBrowser.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:SunamoWpf.Cef._sunamo.ISunamoBrowser">
+            <summary>
+            Interface for browser control operations.
+            The Control class depends on the type of target application.
+            Used in:
+            - SunamoCef/CefBrowser
+            - WebSunamo/SunamoBrowser
+            - UniversalWebControl/SunamoBrowser
+            </summary>
+        </member>
+        <member name="P:SunamoWpf.Cef._sunamo.ISunamoBrowser.Source">
+            <summary>
+            Gets or sets the source URI of the browser.
+            </summary>
+        </member>
+        <member name="P:SunamoWpf.Cef._sunamo.ISunamoBrowser.HTML">
+            <summary>
+            Gets the HTML content.
+            </summary>
+        </member>
+        <member name="M:SunamoWpf.Cef._sunamo.ISunamoBrowser.GetHtmlDocument">
+            <summary>
+            Gets the HTML document.
+            Must be Task due to UWP! Much time spent with this on GeoCachingTool.
+            </summary>
+            <returns>HTML document task.</returns>
+        </member>
+        <member name="M:SunamoWpf.Cef._sunamo.ISunamoBrowser.GetContent">
+            <summary>
+            Gets the HTML content.
+            Sometimes getting outer HTML is quite slow, so put await Task.Delay(500) before calling GetContent().
+            Remember for troubles with GeoCachingTool.
+            </summary>
+            <returns>HTML content task.</returns>
+        </member>
+        <member name="M:SunamoWpf.Cef._sunamo.ISunamoBrowser.Navigate(System.String)">
+            <summary>
+            Navigates to the specified URI.
+            </summary>
+            <param name="uri">The URI to navigate to.</param>
+        </member>
+        <member name="M:SunamoWpf.Cef._sunamo.ISunamoBrowser.ScrollToEnd">
+            <summary>
+            Scrolls to the end of the page.
+            </summary>
+            <returns>True if successfully scrolled to end; otherwise, false.</returns>
+        </member>
+        <member name="M:SunamoWpf.Cef._sunamo.ISunamoBrowser.Init">
+            <summary>
+            Initializes the browser control.
+            </summary>
+        </member>
+        <member name="T:SunamoWpf.Cef._sunamo.ISunamoBrowserT`1">
+            <summary>
+            Generic browser interface with type parameter for browser control type.
+            </summary>
+            <typeparam name="T">The type of the browser control.</typeparam>
+        </member>
+        <member name="T:SunamoWpf.Cef._sunamo.VoidString">
+            <summary>
+            Represents a method that takes a string parameter and returns void.
+            </summary>
+            <param name="text">The input text.</param>
+        </member>
+        <member name="T:SunamoWpf.Cef._sunamo.VoidT`1">
+            <summary>
+            Represents a method that takes a value of type T and returns void.
+            </summary>
+            <typeparam name="T">The type of the value parameter.</typeparam>
+            <param name="value">The value of type T.</param>
+        </member>
+    </members>
+</doc>
