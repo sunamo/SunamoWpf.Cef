@@ -1,0 +1,232 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "SunamoWpf.Cef/26.9.28.1": {
+        "dependencies": {
+          "CefSharp.Wpf.NETCore": "152.0.100",
+          "HtmlAgilityPack": "1.12.4"
+        },
+        "runtime": {
+          "SunamoWpf.Cef.dll": {}
+        }
+      },
+      "CefSharp.Common.NETCore/152.0.100": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/lib/net6.0/CefSharp.Core.Runtime.dll": {
+            "rid": "win-arm64",
+            "assetType": "runtime",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-arm64/lib/net6.0/CefSharp.Core.Runtime.dll"
+          },
+          "runtimes/win-arm64/lib/net6.0/CefSharp.Core.dll": {
+            "rid": "win-arm64",
+            "assetType": "runtime",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-arm64/lib/net6.0/CefSharp.Core.dll"
+          },
+          "runtimes/win-arm64/lib/net6.0/CefSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "runtime",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-arm64/lib/net6.0/CefSharp.dll"
+          },
+          "runtimes/win-arm64/lib/net6.0/Ijwhost.dll": {
+            "rid": "win-arm64",
+            "assetType": "runtime",
+            "fileVersion": "6.0.3324.36610",
+            "localPath": "runtimes/win-arm64/lib/net6.0/Ijwhost.dll"
+          },
+          "runtimes/win-x64/lib/net6.0/CefSharp.Core.Runtime.dll": {
+            "rid": "win-x64",
+            "assetType": "runtime",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x64/lib/net6.0/CefSharp.Core.Runtime.dll"
+          },
+          "runtimes/win-x64/lib/net6.0/CefSharp.Core.dll": {
+            "rid": "win-x64",
+            "assetType": "runtime",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x64/lib/net6.0/CefSharp.Core.dll"
+          },
+          "runtimes/win-x64/lib/net6.0/CefSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "runtime",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x64/lib/net6.0/CefSharp.dll"
+          },
+          "runtimes/win-x64/lib/net6.0/Ijwhost.dll": {
+            "rid": "win-x64",
+            "assetType": "runtime",
+            "fileVersion": "6.0.3324.36610",
+            "localPath": "runtimes/win-x64/lib/net6.0/Ijwhost.dll"
+          },
+          "runtimes/win-x86/lib/net6.0/CefSharp.Core.Runtime.dll": {
+            "rid": "win-x86",
+            "assetType": "runtime",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x86/lib/net6.0/CefSharp.Core.Runtime.dll"
+          },
+          "runtimes/win-x86/lib/net6.0/CefSharp.Core.dll": {
+            "rid": "win-x86",
+            "assetType": "runtime",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x86/lib/net6.0/CefSharp.Core.dll"
+          },
+          "runtimes/win-x86/lib/net6.0/CefSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "runtime",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x86/lib/net6.0/CefSharp.dll"
+          },
+          "runtimes/win-x86/lib/net6.0/Ijwhost.dll": {
+            "rid": "win-x86",
+            "assetType": "runtime",
+            "fileVersion": "6.0.3324.36610",
+            "localPath": "runtimes/win-x86/lib/net6.0/Ijwhost.dll"
+          },
+          "runtimes/win-arm64/native/CefSharp.BrowserSubprocess.Core.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-arm64/native/CefSharp.BrowserSubprocess.Core.dll"
+          },
+          "runtimes/win-arm64/native/CefSharp.BrowserSubprocess.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-arm64/native/CefSharp.BrowserSubprocess.dll"
+          },
+          "runtimes/win-arm64/native/CefSharp.BrowserSubprocess.exe": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-arm64/native/CefSharp.BrowserSubprocess.exe"
+          },
+          "runtimes/win-arm64/native/CefSharp.BrowserSubprocess.runtimeconfig.json": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-arm64/native/CefSharp.BrowserSubprocess.runtimeconfig.json"
+          },
+          "runtimes/win-x64/native/CefSharp.BrowserSubprocess.Core.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x64/native/CefSharp.BrowserSubprocess.Core.dll"
+          },
+          "runtimes/win-x64/native/CefSharp.BrowserSubprocess.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x64/native/CefSharp.BrowserSubprocess.dll"
+          },
+          "runtimes/win-x64/native/CefSharp.BrowserSubprocess.exe": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x64/native/CefSharp.BrowserSubprocess.exe"
+          },
+          "runtimes/win-x64/native/CefSharp.BrowserSubprocess.runtimeconfig.json": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x64/native/CefSharp.BrowserSubprocess.runtimeconfig.json"
+          },
+          "runtimes/win-x86/native/CefSharp.BrowserSubprocess.Core.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x86/native/CefSharp.BrowserSubprocess.Core.dll"
+          },
+          "runtimes/win-x86/native/CefSharp.BrowserSubprocess.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x86/native/CefSharp.BrowserSubprocess.dll"
+          },
+          "runtimes/win-x86/native/CefSharp.BrowserSubprocess.exe": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "152.0.100.0",
+            "localPath": "runtimes/win-x86/native/CefSharp.BrowserSubprocess.exe"
+          },
+          "runtimes/win-x86/native/CefSharp.BrowserSubprocess.runtimeconfig.json": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x86/native/CefSharp.BrowserSubprocess.runtimeconfig.json"
+          }
+        }
+      },
+      "CefSharp.Wpf.NETCore/152.0.100": {
+        "dependencies": {
+          "CefSharp.Common.NETCore": "152.0.100"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/CefSharp.Wpf.dll": {
+            "assemblyVersion": "152.0.100.0",
+            "fileVersion": "152.0.100.0",
+            "localPath": "CefSharp.Wpf.dll"
+          }
+        }
+      },
+      "HtmlAgilityPack/1.12.4": {
+        "runtime": {
+          "lib/net7.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.12.4.0",
+            "fileVersion": "1.12.4.0",
+            "localPath": "HtmlAgilityPack.dll"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SunamoWpf.Cef/26.9.28.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CefSharp.Common.NETCore/152.0.100": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wDaAsZeb7ifWL5W8XsOKJBOpbuWH3NRU3aSU/CfO5TGvwQWjvjx7sh0FWLHfG3bZZMF1e8QUWfKfNn85NHya/w==",
+      "path": "cefsharp.common.netcore/152.0.100",
+      "hashPath": "cefsharp.common.netcore.152.0.100.nupkg.sha512"
+    },
+    "CefSharp.Wpf.NETCore/152.0.100": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dhQ3HYH+wOWJ4weuMaJtH7EQ5ZlzeVyJaAeeE3b3njklcyBTuXnK3P9xZyHJ5tjaeFhYdJEgoOPxJJuggaVuHw==",
+      "path": "cefsharp.wpf.netcore/152.0.100",
+      "hashPath": "cefsharp.wpf.netcore.152.0.100.nupkg.sha512"
+    },
+    "HtmlAgilityPack/1.12.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ljqvBabvFwKoLniuoQKO8b5bJfJweKLs4fUNS/V5dsvpo0A8MlJqxxn9XVmP2DaskbUXty6IYaWAi1SArGIMeQ==",
+      "path": "htmlagilitypack/1.12.4",
+      "hashPath": "htmlagilitypack.1.12.4.nupkg.sha512"
+    }
+  }
+}
