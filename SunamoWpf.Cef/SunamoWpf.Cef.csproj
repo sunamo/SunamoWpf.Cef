@@ -9,7 +9,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
-    <Version>26.9.28.1</Version>
+    <Version>26.9.30.2</Version>
     <Description>CefSharp-based WPF browser control implementing ISunamoBrowser</Description>
     <Authors>www.sunamo.cz</Authors>
     <Copyright>www.sunamo.cz</Copyright>
