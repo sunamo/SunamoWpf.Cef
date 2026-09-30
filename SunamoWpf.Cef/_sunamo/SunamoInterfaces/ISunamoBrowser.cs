@@ -1,4 +1,4 @@
-namespace SunamoWpf.Cef.Internal;
+namespace SunamoWpf.Cef._sunamo;
 
 /// <summary>
 /// Interface for browser control operations.

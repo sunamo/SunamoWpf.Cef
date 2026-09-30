@@ -1,4 +1,4 @@
-namespace SunamoWpf.Cef.Internal;
+namespace SunamoWpf.Cef._sunamo;
 
 /// <summary>
 /// Generic browser interface with type parameter for browser control type.

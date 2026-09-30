@@ -4,5 +4,5 @@ global using System.Windows.Controls;
 global using CefSharp;
 global using CefSharp.Wpf;
 global using HtmlAgilityPack;
-global using SunamoWpf.Cef.Internal;
+global using SunamoWpf.Cef._sunamo;
 global using SunamoWpf.Cef;

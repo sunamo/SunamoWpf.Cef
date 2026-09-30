@@ -1,4 +1,4 @@
-namespace SunamoWpf.Cef.Internal;
+namespace SunamoWpf.Cef._sunamo;
 
 /// <summary>
 /// Represents a method that takes a string parameter and returns void.
