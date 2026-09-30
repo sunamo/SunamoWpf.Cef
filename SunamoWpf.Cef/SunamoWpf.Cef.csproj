@@ -34,4 +34,8 @@
     <PackageReference Include="CefSharp.Wpf.NETCore" Version="152.0.100" />
     <PackageReference Include="HtmlAgilityPack" Version="1.12.4" />
   </ItemGroup>
+  <!-- Excluded from the namespace normalization step of the publish tooling (namespaces are intentionally kept as-is). -->
+  <ItemGroup>
+    <None Remove="_sunamo\**" />
+  </ItemGroup>
 </Project>
