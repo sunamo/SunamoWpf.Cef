@@ -57,9 +57,9 @@ public partial class CefBrowser : UserControl, ISunamoBrowserT<Control>
         cefInitialized = true;
     }
 
-    private void OnFrameLoadEnd(object? sender, FrameLoadEndEventArgs e)
+    private void OnFrameLoadEnd(object? sender, FrameLoadEndEventArgs eventArgs)
     {
-        if (e.Frame.IsMain) LoadCompleted?.Invoke(e.Url);
+        if (eventArgs.Frame.IsMain) LoadCompleted?.Invoke(eventArgs.Url);
     }
 
     /// <summary>
